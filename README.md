@@ -15,14 +15,14 @@ Observação importante : Neste exemplo, por ser mais didático eu não estou pr
 
 Tecnologias utilizadas :
 
-DrawIO: Desenho da arquitetura
-GitHub: Repositório do projeto
-GitPod: Desenvolvimento das DAGS, etc
-Docker: Imagens e containers
-Airbyte: Extrator dos arquivos para o projeto
-Airflow: Orquestração das Pipelines do Airbyte
-Snowflake: Banco de dados para armazenamento
-DBT: Ferramenta utilizada para transformação dos dados
+- DrawIO: Desenho da arquitetura
+- GitHub: Repositório do projeto
+- GitPod: Desenvolvimento das DAGS, etc
+- Docker: Imagens e containers
+- Airbyte: Extrator dos arquivos para o projeto
+- Airflow: Orquestração das Pipelines do Airbyte
+- Snowflake: Banco de dados para armazenamento
+- DBT: Ferramenta utilizada para transformação dos dados
 
 Tarefas :
 
@@ -60,7 +60,6 @@ Tarefas :
 
 - No DBT:
   - 
-DBT:
 
 ![image](https://github.com/gsvimieiro/POC_Airbyte_Airflow_DBT_SnowFlake/assets/25323854/7ad63cdc-db8e-4b11-adc4-e1e5b71f0c70)
 
