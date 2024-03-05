@@ -13,7 +13,12 @@ https://www.seguranca.mg.gov.br/images/2024/Fevereiro/CriminalidadeJaneiro/CSV/B
 
 ![image](https://github.com/gsvimieiro/POC_crimesMG_Airbyte_Airflow_DBT_SnowFlake/assets/25323854/3b05fffb-de88-4e1e-b08a-fba771033c84)
 
+DBT:
 
-Para inserir a transformação do DBT no Airbyte basta inserir o link do GitHub do DBT na connection do Airbyte
+![image](https://github.com/gsvimieiro/POC_Airbyte_Airflow_DBT_SnowFlake/assets/25323854/7ad63cdc-db8e-4b11-adc4-e1e5b71f0c70)
+
+
+Agora vamos inserir a transformação do DBT no Airbyte:
+ - Basta inserir o link do GitHub do DBT na connection do Airbyte
 
 ![image](https://github.com/gsvimieiro/POC_Airbyte_Airflow_DBT_SnowFlake/assets/25323854/2aaa16dc-39f8-44d5-aa23-020cb799ec54)
