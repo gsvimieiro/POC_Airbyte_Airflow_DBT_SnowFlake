@@ -54,12 +54,17 @@ Tarefas :
         - docker network connect poc-airbyte-airflow airflow-airflow-worker-1
         - docker network connect poc-airbyte-airflow airflow-airflow-webserver-1
 
+- No DBT:
+  - Editar o dbt_project OK
+  - Criar o profiles.yaml OK
+  - Criar os modelos    OK
+  - Testar    OK
+  - Conferir    OK
+    
 - Pode-se instalar a lib para conexão do airbyte/airflow  OK
 
     - docker-compose run airflow-webserver airflow connections add 'airbyte_connection' --conn-uri 'airbyte://airbyte-proxy:8000'
 
-- No DBT:
-  - 
 
 ![image](https://github.com/gsvimieiro/POC_Airbyte_Airflow_DBT_SnowFlake/assets/25323854/7ad63cdc-db8e-4b11-adc4-e1e5b71f0c70)
 
