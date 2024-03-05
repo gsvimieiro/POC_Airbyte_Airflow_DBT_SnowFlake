@@ -77,3 +77,14 @@ Agora vamos inserir a transformação do DBT no Airbyte:
  - Basta inserir o link do GitHub do DBT na connection do Airbyte
 
 ![image](https://github.com/gsvimieiro/POC_Airbyte_Airflow_DBT_SnowFlake/assets/25323854/2aaa16dc-39f8-44d5-aa23-020cb799ec54)
+
+Conferindo a tabela HEALTH_MODEL criada no Snowflake através do DBT com todas as colunas e transformações implementadas
+
+![image](https://github.com/gsvimieiro/POC_Airbyte_Airflow_DBT_SnowFlake/assets/25323854/90bb4e96-e08d-4d23-ae57-38b9ccfdcab4)
+
+Assim conseguimos demonstrar através de várias tecnologias um pipeline ELT completo desde a extração, orquestração, armazenamento e transformação.
+
+Obrigado por acompanhar
+
+Dúvidas favor me chamar via Linkedin https://www.linkedin.com/in/giuliano-vimieiro-882a911a/
+
