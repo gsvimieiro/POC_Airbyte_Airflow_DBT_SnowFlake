@@ -33,13 +33,13 @@ Tarefas :
 
 - Subir Airflow via Docker - OK
 - No Snowflake :
-   - criar conta
-   - executar o script para criação de schema/warehouse/database
+   - criar conta OK
+   - executar o script para criação de role/username/warehouse/database/schema OK
 - No Airbyte :
     - Preparar a extração do CSV Health  OK
     - Configurar o target Snowflake OK
 - No Airflow :
-    - Criar as DAG'S de orquestração OK
+    - Criar a DAG de orquestração OK
     - Instalar a lib para conexão Airbyte OK
         - procurar o container airflow-airflow-webserver 
         - botao direito --> Attach Shell
@@ -58,6 +58,8 @@ Tarefas :
 
     - docker-compose run airflow-webserver airflow connections add 'airbyte_connection' --conn-uri 'airbyte://airbyte-proxy:8000'
 
+- No DBT:
+  - 
 DBT:
 
 ![image](https://github.com/gsvimieiro/POC_Airbyte_Airflow_DBT_SnowFlake/assets/25323854/7ad63cdc-db8e-4b11-adc4-e1e5b71f0c70)
