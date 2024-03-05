@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: raw_health
+    schema: AIRBYTE_SCHEMA
+    database: AIRBYTE_DATABASE
+    description: Table health of covid_19
+    tables:
+      - name: HEALTH
+        columns:
+          - name: _AIRBYTE_RAW_ID
+            description: ID column based hash
+            tests:
+              - unique
+              - not_null
+              
+models:
+  - name: health_base
+    config:
+      materialized: view
+                    
