@@ -11,6 +11,53 @@ https://health.google.com/covid-19/open-data/raw-data
 
 ![image](https://github.com/gsvimieiro/POC_crimesMG_Airbyte_Airflow_DBT_SnowFlake/assets/25323854/3b05fffb-de88-4e1e-b08a-fba771033c84)
 
+Observação importante : Neste exemplo, por ser mais didático eu não estou preocupado com segurança pois meu intuíto é mostrar o funcionamento de ponta a ponta da minha solução, então, questões como secret's, bucket privado, etc eu não adotei.
+
+Tecnologias utilizadas :
+
+DrawIO: Desenho da arquitetura
+GitHub: Repositório do projeto
+GitPod: Desenvolvimento das DAGS, etc
+Docker: Imagens e containers
+Airbyte: Extrator dos arquivos para o projeto
+Airflow: Orquestração das Pipelines do Airbyte
+Snowflake: Banco de dados para armazenamento
+DBT: Ferramenta utilizada para transformação dos dados
+
+Tarefas :
+
+- Setar permissões do Gitpod para o GitHub - OK
+- Subir Airbyte via Docker - OK
+    - Dar fork no github do airbyte, criar uma branch (branch_airbyte)
+    - git clone -b branch_airbyte https://github.com/gsvimieiro/airbyte.git
+
+- Subir Airflow via Docker - OK
+- No Snowflake :
+   - criar conta
+   - executar o script para criação de schema/warehouse/database
+- No Airbyte :
+    - Preparar a extração do CSV Health  OK
+    - Configurar o target Snowflake OK
+- No Airflow :
+    - Criar as DAG'S de orquestração OK
+    - Instalar a lib para conexão Airbyte OK
+        - procurar o container airflow-airflow-webserver 
+        - botao direito --> Attach Shell
+        - pip install apache-airflow-providers-airbyte
+        - restarta o container
+- No Docker : 
+    - Criar uma rede no docker ex.: poc-airbyte-airflow OK
+        - docker network create poc-airbyte-airflow
+    - Adicionar os containers nesta rede OK
+        - docker network connect poc-airbyte-airflow airbyte-proxy
+        - docker network connect poc-airbyte-airflow airbyte-worker
+        - docker network connect poc-airbyte-airflow airflow-airflow-worker-1
+        - docker network connect poc-airbyte-airflow airflow-airflow-webserver-1
+
+- Pode-se instalar a lib para conexão do airbyte/airflow  OK
+
+    - docker-compose run airflow-webserver airflow connections add 'airbyte_connection' --conn-uri 'airbyte://airbyte-proxy:8000'
+
 DBT:
 
 ![image](https://github.com/gsvimieiro/POC_Airbyte_Airflow_DBT_SnowFlake/assets/25323854/7ad63cdc-db8e-4b11-adc4-e1e5b71f0c70)
