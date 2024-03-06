@@ -11,7 +11,7 @@ https://health.google.com/covid-19/open-data/raw-data
 
 ![image](https://github.com/gsvimieiro/POC_crimesMG_Airbyte_Airflow_DBT_SnowFlake/assets/25323854/3b05fffb-de88-4e1e-b08a-fba771033c84)
 
-Observação importante : Neste exemplo, por ser mais didático eu não estou preocupado com segurança pois meu intuíto é mostrar o funcionamento de ponta a ponta da minha solução, então, questões como secret's, bucket privado, etc eu não adotei.
+- Observação importante : Neste exemplo, por ser mais didático, não estamos preocupados com Segurança pois nosso intuíto é mostrar o funcionamento de ponta a ponta da solução, então, questões como secret's, bucket privado, etc não adotamos.
 
 Tecnologias utilizadas :
 
@@ -62,7 +62,7 @@ Tarefas :
   - Criar os modelos    OK
   - Testar    OK
   - Conferir    OK
-  - Executar o projeto (DBT RUN) para transformação da tabela Health  
+  - Executar o projeto (DBT RUN) para transformação da tabela Health  OK
     
 - Pode-se instalar a lib para conexão do airbyte/airflow  OK
 
