@@ -9,7 +9,8 @@ Link utilizado para extração:
 https://health.google.com/covid-19/open-data/raw-data
 
 
-![image](https://github.com/gsvimieiro/POC_crimesMG_Airbyte_Airflow_DBT_SnowFlake/assets/25323854/3b05fffb-de88-4e1e-b08a-fba771033c84)
+![image](https://github.com/gsvimieiro/POC_Airbyte_Airflow_DBT_SnowFlake/assets/25323854/946bea69-86b1-4384-811b-66153006435a)
+
 
 - Observação importante : Neste exemplo, por ser mais didático, não estamos preocupados com Segurança pois nosso intuíto é mostrar o funcionamento de ponta a ponta da solução, então, questões como secret's, bucket privado, etc não adotamos.
 
